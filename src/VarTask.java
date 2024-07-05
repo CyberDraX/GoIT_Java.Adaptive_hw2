@@ -11,6 +11,9 @@ public class VarTask {
         char englishA = 'A';
         char anyRuLetter = 'п';
         char codeName70 = 'F';
+        boolean javaAfter20 = true;
+        boolean javaOpposite = false;
+
 
 
         System.out.println("happyValue = " + happyValue);
@@ -23,5 +26,7 @@ public class VarTask {
         System.out.println("englishA = " + englishA);
         System.out.println("anyRuLetter = " + anyRuLetter);
         System.out.println("codeName70 = " + codeName70);
+        System.out.println("javaAfter20 = " + javaAfter20);
+        System.out.println("javaOpposite = " + javaOpposite);
     }
 }
