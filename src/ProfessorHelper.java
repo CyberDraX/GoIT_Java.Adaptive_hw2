@@ -8,6 +8,10 @@ public class ProfessorHelper {
         return first * 5 + 3 == second;
     }
 
+    public boolean canPrincessMarry (int day){
+        return day > 15;
+    }
+
     public static void main(String[] args) {
         ProfessorHelper helper = new ProfessorHelper();
 
@@ -16,5 +20,8 @@ public class ProfessorHelper {
 
         //Should be true
         System.out.println("areNumbersFatal(1, 8) = " + helper.areNumbersFatal(1, 8));
+
+        //Should be true
+        System.out.println("canPrincessMarry(20) = " + helper.canPrincessMarry(20));
     }
 }
