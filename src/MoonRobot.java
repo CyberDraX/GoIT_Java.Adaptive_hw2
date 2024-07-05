@@ -8,6 +8,10 @@ public class MoonRobot {
         return hillHeight <= 150 && batteryPercent >= 90;
     }
 
+    public boolean areSensorsOk(boolean isEngineWorking, boolean isRobotStanding){
+        return isEngineWorking ^ isRobotStanding;
+    }
+
     public static void main(String[] args) {
         MoonRobot robot = new MoonRobot();
 
@@ -16,5 +20,8 @@ public class MoonRobot {
 
         //Should be true
         System.out.println("canJumpOverHill(100, 90) = " + robot.canJumpOverHill(100, 90));
+
+        //Should be false
+        System.out.println("areSensorsOk(true, true) = " + robot.areSensorsOk(true, true));
     }
 }
