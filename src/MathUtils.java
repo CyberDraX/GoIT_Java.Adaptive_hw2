@@ -12,6 +12,10 @@ public class MathUtils {
         return a / 0.5f;
     }
 
+    public int twicedSum(int a, int b){
+        return sum(a, b) * 2;
+    }
+
     public static void main(String[] args) {
         MathUtils math = new MathUtils();
 
@@ -23,5 +27,8 @@ public class MathUtils {
 
         //Should be 14
         System.out.println("math.twice(7f) = " + math.twice(7));
+
+        //Should be 10
+        System.out.println("math.twicedSum(2, 3) = " + math.twicedSum(2, 3));
     }
 }
