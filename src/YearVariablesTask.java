@@ -5,7 +5,7 @@ public class YearVariablesTask {
         byte allMonthCountButNotWinter = 9;
         short february1996DayCount = 29;
         int halfOfTotalSpringDayCount = 46;
-        long yearSecondCount = 31536000l;
+        long yearSecondCount = 31536000L;
         float quarterOfMayDayCount = 7.8f;
         double dayCountOfLongMonths = 217d;
         char springLetter = 'r';
