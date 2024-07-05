@@ -6,6 +6,7 @@ public class VarTask {
         int randomAnswer;
         randomAnswer = 140;
         long longerThanLife = 153474353453278L;
+        float tooBigToFail = 1111.1f;
 
 
         System.out.println("happyValue = " + happyValue);
@@ -13,5 +14,6 @@ public class VarTask {
         System.out.println("globalAnswer = " + globalAnswer);
         System.out.println("randomAnswer = " + randomAnswer);
         System.out.println("longerThanLife = " + longerThanLife);
+        System.out.println("tooBigToFail = " + tooBigToFail);
     }
 }
