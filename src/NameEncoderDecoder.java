@@ -10,7 +10,7 @@ public class NameEncoderDecoder {
     }
 
     public String decode (String name){
-        String replaceFistPart = name.substring(9).replace("YESNOTFORYOU", "");;
+        String replaceFistPart = name.substring(9).replace("YESNOTFORYOU", "");
         String replaceSecondPart = replaceFistPart.strip();
         return replaceSecondPart.replace("1","e")
                                 .replace("2","u")
