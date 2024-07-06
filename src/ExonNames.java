@@ -34,6 +34,20 @@ public class ExonNames {
         return firstWordNumber >= '0' && firstWordNumber <= '9' && secondWordNumber >= '0' && secondWordNumber <= '9';
     }
 
+    /*public boolean isMoneyName(String name) {
+        char firstLetter = name.charAt(0);
+        char lastLetter = name.charAt(name.length() - 1);
+
+        boolean firstLetterOk = firstLetter >= '0' && firstLetter <= '9';
+        boolean lastLetterOk = lastLetter >= '0' && lastLetter <= '9';
+
+        return firstLetterOk && lastLetterOk;
+    }*/
+
+    public boolean isInvisibleName(String name){
+        return name.isBlank();
+    }
+
     public static void main(String[] args) {
         ExonNames names = new ExonNames();
 
@@ -63,5 +77,9 @@ public class ExonNames {
 
         boolean isMoneyName2 = names.isMoneyName("77Hero");
         System.out.println("names.isMoneyName2(\"77Hero\") = " + names.isMoneyName("77Hero"));
+
+        //Should be true
+        boolean isInvisible = names.isInvisibleName(" ");
+        System.out.println("names.isInvisibleName(\" \") = " + isInvisible);
     }
 }
