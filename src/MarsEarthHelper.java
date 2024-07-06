@@ -4,10 +4,17 @@ public class MarsEarthHelper {
         return (int) count;
     }
 
+    public int countAppleCount(int garden1Count, int garden2Count){
+        return garden1Count + garden2Count;
+    }
+
     public static void main(String[] args) {
         MarsEarthHelper helper = new MarsEarthHelper();
 
         //Should be 10
         System.out.println("convertAppleCount(10f) = " + helper.convertAppleCount(10f));
+
+        //Should be 17
+        System.out.println("countAppleCount(10, 7) = " + helper.countAppleCount(10, 7));
     }
 }
