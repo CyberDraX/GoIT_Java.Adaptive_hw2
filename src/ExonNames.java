@@ -61,6 +61,18 @@ public class ExonNames {
         }
     }
 
+    /*public String makeNamePositive(String name) {
+        return name
+                .replace("no", "yes")
+                .replace("No", "yes")
+                .replace("nO", "yes")
+                .replace("NO", "yes");
+    }*/
+
+    public String makeNameClean(String name){
+        return "CLEAN" + name.trim() + "CLEAN";
+    }
+
     public static void main(String[] args) {
         ExonNames names = new ExonNames();
 
@@ -98,5 +110,9 @@ public class ExonNames {
         //Should be YesMont
         String positive = names.makeNamePositive("NoMont");
         System.out.println("names.makeNamePositive(\"NoMont\") = " + positive);
+
+        //Should be CLEANdirtyCLEAN
+        String cleanName = names.makeNameClean(" dirty ");
+        System.out.println("names.makeNameClean(\" dirty \") = " + cleanName);
     }
 }
