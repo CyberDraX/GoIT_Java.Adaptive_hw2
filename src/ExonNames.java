@@ -73,6 +73,11 @@ public class ExonNames {
         return "CLEAN" + name.trim() + "CLEAN";
     }
 
+    public String makeHalfOfName(String name){
+        int half = name.length() / 2;
+        return name.substring(0, half);
+    }
+
     public static void main(String[] args) {
         ExonNames names = new ExonNames();
 
@@ -114,5 +119,9 @@ public class ExonNames {
         //Should be CLEANdirtyCLEAN
         String cleanName = names.makeNameClean(" dirty ");
         System.out.println("names.makeNameClean(\" dirty \") = " + cleanName);
+
+        //Should be Gu
+        String halfOfName = names.makeHalfOfName("Gurk");
+        System.out.println("names.makeHalfOfName(\"Gurk\") = " + names.makeHalfOfName("Gurk"));
     }
 }
